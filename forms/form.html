@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>  
+  <div class="wrapper">
+    <a href="#modalbox">Login</a>
+    <div class="modal-container" id="modalbox">
+        <a href="#" class="modal-close-btn" style="z-index: 2;">
+            <i class="fas fa-times-circle"></i>
+        </a>
+        <div class="form-container sign-up-container" style="z-index: 1;">
+            <form action="#" class="modal-form">
+                <h1 class="h-ones">Create Account</h1>
+                <!-- <div class="social-container">
+                    <a href="#" class="social a-tag"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social a-tag"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social a-tag"><i class="fab fa-linkedin-in"></i></a>
+                </div> -->
+                <span class="spans">or use your email for registration</span>
+                <input class="modal-form-inputs" type="text" placeholder="Name" />
+                <input class="modal-form-inputs" type="email" placeholder="Email" />
+                <input class="modal-form-inputs" type="password" placeholder="Password" />
+                <button class="modal-btns">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container"  style="z-index: 1;">
+            <form action="#"  class="modal-form">
+                <h1  class="h-ones">Sign in</h1>
+                <!-- <div class="social-container">
+                    <a href="#" class="social a-tag"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social a-tag"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social a-tag"><i class="fab fa-linkedin-in"></i></a>
+                </div> -->
+                <span class="spans">or use your account</span>
+                <input class="modal-form-inputs" type="email" placeholder="Email" />
+                <input class="modal-form-inputs"  type="password" placeholder="Password" />
+                <a href="#" class=" a-tag">Forgot your password?</a>
+                <button class="modal-btns">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container" style="z-index: 1;">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1  class="h-ones">Welcome Back!</h1>
+                    <p class="p-tags">To keep connected with us please login with your personal info</p>
+                    <button class="ghost modal-btns" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1  class="h-ones">Hello, Friend!</h1>
+                    <p  class="p-tags">Enter your personal details and start journey with us</p>
+                    <button class="ghost modal-btns" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+   
+
+</body>
+</html>
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('modalbox');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>
