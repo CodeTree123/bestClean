@@ -13,15 +13,18 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
+  /* padding-top: 70px; */
 }
-
+h2{
+  color: #198754;
+}
 a {
-  color: #428bca;
+  color: #198754;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9eccf4;
+  color: #4cb54a;
   text-decoration: none;
 }
 
@@ -50,7 +53,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #629fd3;
+  background: #348f3c;
   color: #fff;
 }
 .back-to-top.active {
@@ -109,10 +112,19 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+ .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
 #header { 
   background: #fff;
-  z-index: 997;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
+  z-index: 997; 
+}
+header#header {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 #header .logo h1 {
   font-size: 28px;
@@ -220,7 +232,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #428bca;
+  color: #4cb54a;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -304,7 +316,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #1f3548;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #428bca;
+  color: #4cb54a;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -335,6 +347,82 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+/*--------------------------------------------------------------
+# Outlet Section
+--------------------------------------------------------------*/
+.outlet_location_box {
+  height: 250px;
+} 
+
+/*--------------------------------------------------------------
+# Outlet Section End
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing_type{
+  object-fit: cover;
+}
+ div#lightboxed--bttn_close {
+                        position: absolute;
+                        top: 60px;
+                        right: 10px;
+                        background: #fff;
+                        background: rgba(255, 255, 255, 0.6);
+                        background-image: url(../../controls.png);
+                        background-repeat: no-repeat;
+                        background-size: auto 100%;
+                        background-position: 100%;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        cursor: pointer;
+                    }
+                    
+                    div#lightboxed--bttn_next {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        background: #fff;
+                        background: rgba(255, 255, 255, 0.6);
+                        background-image: url(../../controls.png);
+                        background-repeat: no-repeat;
+                        background-size: auto 100%;
+                        background-position: 50%;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        -ms-transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                    
+                    div#lightboxed--bttn_prev {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 10px;
+                        background: #fff;
+                        background: rgba(255, 255, 255, 0.6);
+                        background-image: url(../../controls.png);
+                        background-repeat: no-repeat;
+                        background-size: auto 100%;
+                        background-position: 0%;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        -ms-transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+/*--------------------------------------------------------------
+# Pricing Section End
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -477,8 +565,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  padding: 60px 0;
+section { 
   overflow: hidden;
 }
 .gallery-section,.team-section,.client-section,.pricing-section{
@@ -494,14 +581,13 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .section-title h2 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #5c768d;
+  padding-bottom: 0; 
 }
 .section-title p {
   margin-bottom: 0;
@@ -548,9 +634,70 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Home Page Team Section Slider
+--------------------------------------------------------------*/
+.img_container {
+  position: relative;
+  width: 50%;
+  background-color: #000;
+}
+.img_container img{
+  border-radius: 0;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: fit-content;
+}
+
+.img_container:hover .img-thumbnail { 
+
+  opacity: 0.3;
+}
+
+.img_container:hover .middle {
+  
+  opacity: 1;
+}
+.team_member_name{
+  font-weight: 700;
+  color: #4cb54a;
+}
+.text { 
+  color: #ffffff;
+  font-size: 16px;
+  padding: 16px 0px;
+}
+
+ 
+/*--------------------------------------------------------------
+# Home Page Team Section Slider End
+--------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # About Us
---------------------------------------------------------------*/
+--------------------------------------------------------------*/ 
+.about-img{
+  width: 80%;
+}  
 .about {
   padding-bottom: 30px;
 }
@@ -860,7 +1007,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #428bca;
+  background: #198754;
   color: #fff;
 }
 .portfolio #portfolio-flters li:last-child {
@@ -1089,6 +1236,9 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.feedback-img {
+  width: 70%;
+}
 .contact .info-box {
   color: #444;
   text-align: center;
@@ -1182,7 +1332,7 @@ section {
   transition: 0.4s;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #629fd3;
+  background: #348f3c;
 }
 select.form-custom-select{
   color: #818181;
@@ -1214,19 +1364,38 @@ select.form-custom-select{
   }
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-links li{
+  list-style: none;
+  text-align: left;
+  align-items: center;
+  font-size: 15px;
+  line-height: 30px;
+   
+}
+.footer-links li a{
+  color: #fff;
+}
 #footer {
   background: #000000;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
-
+#footer .footer-top .social-links a:hover {
+  background: #004916;
+  color: #fff;
+  text-decoration: none;
+}
 #footer .footer-top {
-  background: #5c768d;
+  background: #198754;
   border-top: 1px solid #768fa6;
   border-bottom: 1px solid #67839c;
   padding: 60px 0 30px 0;
 }
+
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
@@ -1235,14 +1404,14 @@ select.form-custom-select{
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 700; 
 }
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #fff;
+  color: #fff; 
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -1343,6 +1512,9 @@ select.form-custom-select{
 #footer .credits a {
   color: #9eccf4;
 }
+/*--------------------------------------------------------------
+# Footer End
+--------------------------------------------------------------*/
 
 @media only screen and (min-width: 900px) {
    .fb-frame .fb-page{

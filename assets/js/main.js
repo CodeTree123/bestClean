@@ -77,22 +77,22 @@
   /**
    * Header fixed top on scroll
    */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop
-    let nextElement = selectHeader.nextElementSibling
-    const headerFixed = () => {
-      if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('fixed-top')
-        nextElement.classList.add('scrolled-offset')
-      } else {
-        selectHeader.classList.remove('fixed-top')
-        nextElement.classList.remove('scrolled-offset')
-      }
-    }
-    window.addEventListener('load', headerFixed)
-    onscroll(document, headerFixed)
-  }
+  // let selectHeader = select('#header')
+  // if (selectHeader) {
+  //   let headerOffset = selectHeader.offsetTop
+  //   let nextElement = selectHeader.nextElementSibling
+  //   const headerFixed = () => {
+  //     if ((headerOffset - window.scrollY) <= 0) {
+  //       selectHeader.classList.add('fixed-top')
+  //       nextElement.classList.add('scrolled-offset')
+  //     } else {
+  //       selectHeader.classList.remove('fixed-top')
+  //       nextElement.classList.remove('scrolled-offset')
+  //     }
+  //   }
+  //   window.addEventListener('load', headerFixed)
+  //   onscroll(document, headerFixed)
+  // }
 
   /**
    * Hero carousel indicators
@@ -199,7 +199,7 @@
       }, true);
     }
 
-  });
+  }); 
 
   /**
    * Initiate portfolio lightbox 
@@ -208,21 +208,7 @@
     selector: '.portfolio-lightbox'
   });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+   
 
   /**
    * Animation on scroll
@@ -237,3 +223,78 @@
   });
 
 })()
+
+// Index page team and client section  slider
+ 
+$('.team_slider_section').slick({
+infinite: true,
+slidesToShow: 4,
+slidesToScroll: 4,
+autoplay: true,
+autoplaySpeed:6000,
+
+responsive: [
+ {
+   breakpoint: 1024,
+   settings: {
+     slidesToShow: 3,
+     slidesToScroll: 3,
+     infinite: true,
+     dots: true
+   }
+ },
+ {
+   breakpoint: 600,
+   settings: {
+     slidesToShow: 2,
+     slidesToScroll: 2,
+     prevArrow: false,
+     nextArrow: false
+   }
+ },
+ {
+   breakpoint: 480,
+   settings: {
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     prevArrow: false,
+     nextArrow: false
+   }
+ } 
+]
+});
+$('.client_slider_section').slick({
+infinite: true,
+slidesToShow: 4,
+slidesToScroll: 4,
+autoplay: true,
+
+responsive: [
+ {
+   breakpoint: 1024,
+   settings: {
+     slidesToShow: 3,
+     slidesToScroll: 3,
+     infinite: true,
+     dots: true
+   }
+ },
+ {
+   breakpoint: 600,
+   settings: {
+     slidesToShow: 2,
+     slidesToScroll: 2
+   }
+ },
+ {
+   breakpoint: 480,
+   settings: {
+     slidesToShow: 1,
+     slidesToScroll: 1
+   }
+ } 
+]
+});
+
+ 
+// Index page team and client section  slider end
