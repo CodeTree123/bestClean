@@ -1,68 +1,4 @@
-@media only screen and (max-width: 360px) {
-    .navigation {
-        font-size: 8px;
-        width: 100%;
-        position: fixed;
-    }
-    .logo {
-        height: 15px;
-        width: 35px;
-        margin-right: 35px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .navigation {
-        font-size: 16px;
-        width: 100%;
-        position: fixed;
-    }
-    .logo {
-        height: 20px;
-        width: 40px;
-        margin-right: 35px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .navigation {
-        font-size: 20px;
-        width: 100%;
-        position: fixed;
-    }
-    .logo {
-        height: 20px;
-        width: 40px;
-        margin-right: 35px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .navigation {
-        font-size: 12px;
-        width: 100%;
-        position: fixed;
-    }
-    .logo {
-        height: 20px;
-        width: 40px;
-        margin-right: 35px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .navigation {
-        font-size: 16px;
-        width: 1024;
-        position: fixed;
-    }
-    .logo {
-        height: 25px;
-        width: 45px;
-        margin-right: 35px;
-    }
-}
-
+ 
 .b111 {
     padding: 10px;
     font-size: 12px;
@@ -435,15 +371,14 @@ body {
 }
 
 .tab .effect .tab-text {
-    padding: 2em;
+    padding: 2em 0 2em 0;
     color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25rem;
+    text-transform: uppercase; 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
-    top: 50px;
-    left: -53px;
+    top: 70px;
+    left: -30px;
     width: 100%;
     height: 100%
 }
@@ -1183,7 +1118,7 @@ body {
 
 .effect.effect-four img {
     max-width: none;
-    width: calc(100% + 60px);
+    width: 100%;
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1.12);
     transition: all .35s;
@@ -1192,8 +1127,8 @@ body {
 }
 
 .effect.effect-four:hover img {
-    transform: translate3d(-20px, 0, 0) scale(1);
-    -webkit-transform: translate3d(-20px, 0, 0) scale(1);
+    transform: scale(1);
+    -webkit-transform:    scale(1);
     opacity: .5
 }
 

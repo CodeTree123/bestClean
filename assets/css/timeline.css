@@ -96,6 +96,7 @@
           width: 200px;
           padding: 15px;
           background: #ffffff;
+          text-align: justify;
         }
 
         
@@ -128,7 +129,7 @@
         .timeline ul li:nth-child(even) div {
           /* left: 45px; */
           left: 13px;
-          top: 3px;
+          top: 2px;
         }
 
         /* the arrows */
@@ -138,11 +139,22 @@
           border-color: transparent #ff0015 transparent transparent;
           
         }
+        .timeline ul li:nth-child(3) {
+          display: none;
+          
+        }
 
         .timeline ul li .right {
           position: absolute;
-          left: -209px !important;
-          top: 95px !important;
+          left: -279px !important;
+          top: 55px !important; 
+          transition: all .5s ease-in-out;
+          text-align: justify;
+          width: 270px;
+
+      }
+      .right img{
+        width: 80%;
       }
       /* .timeline ul li .right::before{
         content: 'hello';
@@ -188,14 +200,18 @@
           transition: all .5s ease-in-out;
         }
 
-        .timeline ul li:nth-child(odd) div {
-          transform: translate3d(200px, 0, 0);
-        }
-
-        .timeline ul li:nth-child(even) div {
+        /* .timeline ul li:nth-child(odd) div{
           transform: translate3d(-200px, 0, 0);
         }
 
+        .timeline ul li:nth-child(even) div {
+          transform: translate3d(200px, 0, 0);
+        }
+        .timeline ul li:nth-child(2) .right{
+          transform: translate3d(100px, 0, 0);
+
+        }   */
+ 
         .timeline ul li.in-view div {
           transform: none;
           visibility: visible;
@@ -237,7 +253,7 @@
             border-color: transparent #ff0015 transparent transparent;
           }
         } */
-        @media screen and (max-width: 451px) {
+        /* @media screen and (max-width: 451px) {
           
           .timeline ul li div {
             width: 150px;
@@ -254,6 +270,28 @@
           .timeline ul li .right {
             position: absolute;
             left: -150px !important;
+          }
+
+        } */
+        @media screen and (max-width: 592px) {
+          
+          .timeline ul li div {
+            width: 150px;
+          }
+          .timeline ul li:nth-child(odd) div {
+            left: -200px;
+            top: 2px;
+        }
+          .timeline ul li:nth-child(even) div {
+            left: 10px;
+          }
+          .timeline ul li:last-child div {
+            top: 3px;
+        }
+          .timeline ul li .right {
+            position: absolute;
+            left: -270px !important;
+            width: 150px;
           }
 
         }
