@@ -36,6 +36,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
 </head>
 
 <body>  
@@ -59,8 +62,8 @@
 		<div class="row" style="height: 85%;">
 			<div class="contact-info col-12 text-lg-start text-md-start text-sm-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
 			  <i class="bi bi-phone-fill phone-icon"></i>
-			  <a href="tel:0198-57-02-117" id="hotline" class="text-danger fw-bold ">
-				HOTLINE : 0198-57-02-117
+			  <a href="tel:01985702117" id="hotline" class="text-danger fw-bold ">
+				HOTLINE : 01985702117
 			  </a>
 			</div>
 			<div class="col-12 d-flex justify-content-end align-items-start">
@@ -578,18 +581,18 @@
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form  id="form"  >
               <div class="row">
-                <div class="col-lg-12 form-group">
-                  <input type="text" name="name" class="form-control form-custom-select" id="name" placeholder="Your Name" required />
+                <div class="col-lg-12 my-2 form-group">
+                  <input type="text"  class="form-control form-custom-select" name="name" id="name" placeholder="Your Name" required />
                 </div>
-                <div class="col-lg-12 form-group">
+                <div class="col-lg-12 my-2  form-group">
                   <input type="email" class="form-control form-custom-select" name="email" id="email" placeholder="Your Email" required />
                 </div>
               </div>
               <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required> -->
-              <div class="form-group">
-                <select class="form-control form-custom-select" id="sel1" placeholder="Subject">
+              <div class="form-group my-2 ">
+                <select class="form-control form-custom-select" name="subject" id="sel1" placeholder="Subject">
                   <option>Subject</option>
                   <option>Enquiry</option>
                   <option>Claims</option>
@@ -597,20 +600,12 @@
                   <option>Others</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="form-group my-2 ">
                 <textarea class="form-control form-custom-select" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-success" type="submit">
-                  Send Message
-                </button>
+           
+              <div class="text-center my-2 "> 
+                 <input type="submit"  class="btn btn-success" id="button" value="Send Message"> 
               </div>
             </form>
           </div>
@@ -703,16 +698,17 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> 
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>  
 
 
-  <script type="text/javascript" src="slick/slick.js"></script>
-  <!-- Template Main JS File -->
+  <script type="text/javascript" src="slick/slick.js"></script> 
   <script src="assets/js/main.js"></script>
 
 
 
+<!-- emailjs start -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="mailsend.js"></script>
 
 </body>
 
