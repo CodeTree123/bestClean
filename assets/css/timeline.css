@@ -147,7 +147,7 @@
         .timeline ul li .right {
           position: absolute;
           left: -279px !important;
-          top: 55px !important; 
+          top: 55px ; 
           transition: all .5s ease-in-out;
           text-align: justify;
           width: 270px;
@@ -280,7 +280,7 @@
           }
           .timeline ul li:nth-child(odd) div {
             left: -200px;
-            top: 2px;
+            top: 20px;
         }
           .timeline ul li:nth-child(even) div {
             left: 10px;
@@ -292,6 +292,7 @@
             position: absolute;
             left: -270px !important;
             width: 150px;
+
           }
 
         }
