@@ -93,7 +93,7 @@
         .timeline ul li div {
           position: relative;
           bottom: 0;
-          width: 200px;
+          width: 250px;
           padding: 15px;
           background: #ffffff;
           text-align: justify;
@@ -114,7 +114,7 @@
         } */
 
         .timeline ul li:nth-child(odd) div {
-          left: -209px;
+          left: -255px;
         }
         /* the arrows */
         .timeline ul li:nth-child(odd) div::before {
@@ -128,8 +128,8 @@
 
         .timeline ul li:nth-child(even) div {
           /* left: 45px; */
-          left: 13px;
-          top: 2px;
+          left: 10px;
+          top: 3px;
         }
 
         /* the arrows */
@@ -146,15 +146,15 @@
 
         .timeline ul li .right {
           position: absolute;
-          left: -279px !important;
-          top: 55px ; 
+          left: -275px !important;
+          top: 92px !important; 
           transition: all .5s ease-in-out;
           text-align: justify;
           width: 270px;
 
       }
       .right img{
-        width: 80%;
+        width: 100%;
       }
       /* .timeline ul li .right::before{
         content: 'hello';
@@ -274,25 +274,63 @@
 
         } */
         @media screen and (max-width: 592px) {
+
+          .timeline ul li.in-view::after {
+            font-size: 16px;
+        }
+
+          .timeline ul{
+            font-size: 14px;
+          }
+          
+          .timeline ul li div {
+            width: 200px;
+          }
+          .timeline ul li:nth-child(odd) div {
+            left: -205px;
+            top: -2px;
+        }
+          .timeline ul li:nth-child(even) div {
+            left: 10px;
+            top:2px;
+          }
+          .timeline ul li .right {
+            position: absolute;
+            left: -205px !important;
+            width: 200px;
+            top: 94px !important;
+          }
+
+        }
+        @media screen and (max-width: 450px) {
+
+          .timeline ul li.in-view::after {
+            font-size: 16px;
+        }
+
+          .timeline ul{
+            font-size: 10px;
+          }
           
           .timeline ul li div {
             width: 150px;
           }
           .timeline ul li:nth-child(odd) div {
-            left: -200px;
-            top: 20px;
+            left: -155px;
+            top: -3px;
         }
           .timeline ul li:nth-child(even) div {
             left: 10px;
+            top:-2px;
           }
           .timeline ul li:last-child div {
-            top: 3px;
+            /* top: 3px; */
         }
           .timeline ul li .right {
             position: absolute;
-            left: -270px !important;
+            left: -155px !important;
             width: 150px;
-
+            top: 77px !important;
           }
 
         }

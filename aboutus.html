@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BestClean-About Us</title>
+  <title>BestClean</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,8 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 
   <!-- Vendor CSS Files --> 
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -33,8 +31,64 @@
  
 </head>
 
-<body> 
-   <!-- ======= Header ======= -->
+<body>
+ <style>
+    header#header{ 
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    #topbar .contact-info i {
+    color: #348F3C;
+    line-height: 0;
+    margin-right: 5px;
+    }
+    #topbar .contact-info a{
+    color: #ff0000; 
+    font-size: 20px;
+    }
+  .about .section-title p {
+      text-align: left;
+      font-style: normal;
+      color: rgb(0, 0, 0);
+    } 
+    .step-images{
+        width:30%;
+      }  
+    .step-path{ 
+      margin-left: 30%;
+    }
+    i.right-arrow{
+      font-size: 20px;
+    }
+    .step-images-4{  
+      margin-right: 25%;
+    }  
+
+    /* backto top */
+    .back-to-top { 
+    background: #348F3C; 
+}
+    .back-to-top:hover { 
+    background: #348F3C; 
+}
+/* about us page style */
+  .about-img{
+    width: 80%;
+  }
+  .about-img-quad{
+    width:20%;
+  }
+  .about-img-quad {
+    display: inline;
+  }
+  .bd-img{
+    width:40%;
+    position: relative;
+    left: 25%;
+  }
+/* about us page style */
+  </style> 
+ 
+ <!-- ======= Header ======= -->
  <header id="header"   class="sticky-top">
   <div class="container p-0">
     <div class="row justify-content-sm-center align-content-center p-0 m-0">
@@ -60,7 +114,7 @@
 			  <nav id="navbar" class="navbar">
 				<ul>
 				  <li>
-					<a class="nav-link scrollto active" href="index.html">Home</a>
+					<a class="nav-link scrollto  " href="index.html">Home</a>
 				  </li>
 				  <li>
 					<a class="nav-link scrollto" href="outlets.html">Outlets</a>
@@ -96,17 +150,17 @@
   <main id="main">
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about mt-3">
       <div class="container" data-aos="fade-up">
 
-        <div class="row mt-3 no-gutters">
+        <div class="row no-gutters">
           <div class="col-lg-6 video-box"> 
             <img class="about-img" src="assets/img/aboutus/AUS08838.JPG" alt="" srcset="">
         </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
             <div class="section-title " >
-              <h2  >About US</h2>
+              <h2 class="fw-bold" >About US</h2>
               <p>BESTCLEAN started its journey in the year of 2004 with a modern plant consists of state of the art line of machineries. Evolving during these years BESTCLEAN has gained maturity in providing quality service to their valued customers. BESTCLEAN’s strive to reach out metropolitan city dwellers to serve their necessity with the help of modern technology and a touch of personal care will remain.</p>
             </div>
             
@@ -122,93 +176,73 @@
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="col-title text-center">
-          <h2 class=" fixed-semi-top">Our Services</h2>
+          <h2 class=" fixed-semi-top fw-bold">Our Services</h2>
         </div>
         <section class="timeline mx-sm-3">
           <ul>
              
             <li>
-              <div class="content p-0 pe-3 " data-aos="fade-right">  
-                <img src="assets/gif/store-to-van2.gif" id="store_to_van" class="timeline-img circuler pe-3" alt="" srcset="">
-                <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"> 
-                </p>
-                <i class="fas fa-caret-right fa-2x float-end"></i> 
+              <div class="content p-0 pe-3 ">  
+                <img src="assets/gif/store-to-van.gif" class="timeline-img pe-3" alt="" srcset="">
+                <p class="m-0 d-flex justify-content-between align-items-center flex-wrap">PICK UP <i class="fas fa-caret-right fa-2x float-end"></i> </p>
                 
               </div>
             </li>
             <li>
-              <div class="content  p-0 pe-3 right" data-aos="fade-right">  
-                <img src="assets/gif/washing.gif" id="washing_machine" class="timeline-img circuler pe-3 float-end" alt="" srcset="">
-                <p class="m-0 d-flex justify-content-between align-items-center flex-wrap" id="washing"> 
-                  BESTCLEAN has a rich Washing Plant consists of modern technology based world class washing machines where international standard washing chemicals are used. There is a high quality Water Treatment Plant for uninterrupted supply of clean water into the washing plant. BESTCLEAN has a support line of high quality Dryer Machines.
-                </p>
-                <i class="fas fa-caret-right fa-2x float-end"></i>
-
+              <div class="content  p-0 pe-3 right">  
+                <img src="assets/gif/washing.gif" class="timeline-img pe-3" alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"> LAUNDRY <i class="fas fa-caret-right fa-2x float-end"></i></p>
               </div>
-              <div class="content p-0 ps-3 left" data-aos="fade-left">  
-                <img src="assets/gif/dry_cleaning.gif" id="dry_cleaning" class="timeline-img circuler pe-3" alt="" srcset="">
+              <div class="content p-0 ps-3 left">  
+                <img src="assets/gif/dry_cleaning.gif" class="timeline-img pe-3" alt="" srcset="">
                  
-                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"> 
-                   BESTCLEAN has a rich Dry Cleaning line of the latest technology based larger in size Dry Cleaning Machines from internationally famous brands. International standard cleaning chemicals are used in the whole dry cleaning process. 
-                   <i class="fas fa-caret-left fa-2x float-start"></i>
-                  </p>
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"><i class="fas fa-caret-left fa-2x float-start"></i> DRY CLEANING </p>
               </div>
             </li>
             <li>
-              <div class="content p-0 pe-3 " data-aos="fade-right">  
-                <img src="assets/gif/cloth-dry.gif" id="cloth_dry" class="timeline-img circuler pe-3" alt="" srcset="">
-                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap">Fabric Drying <i class="fas fa-caret-right fa-2x float-end"></i> </p> 
-              </div>
-            </li>
-            <li>
-              <div class="content p-0 ps-3" data-aos="fade-left">  
-                <img src="assets/gif/pressing-iron.gif" id="pressing_iron" class="timeline-img circuler ps-3" alt="" srcset="">
-               
-                <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"> 
-                  The Pressing section of BESTCLEAN consists of modern technology based high quality Pressing Machineries and enriched by a pool of highly skilled manpower in Pressing service. There is a Boiler, made in USA to supply steam into the plant without any interruption.
-                  <i class="fas fa-caret-left fa-2x float-start"></i>
-                 </p>
+              <div class="content p-0 pe-3">  
+                <img src="assets/gif/cloth-dry.gif" class="timeline-img pe-3" alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap">Fabric Drying <i class="fas fa-caret-right fa-2x float-end"></i> </p>
                  
 
               </div>
             </li>
             <li>
-              <div class="content p-0 pe-3" data-aos="fade-right">  
-                
-                <img src="assets/gif/qc.gif" id="qc" class="timeline-img circuler pe-3" alt="" srcset="">
+              <div class="content p-0 ps-3">  
+                <img src="assets/gif/pressing-iron.gif" class="timeline-img ps-3" alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"><i class="fas fa-caret-left fa-2x float-start"></i>PRESSING  </p>
                  
-                <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"> 
-                  In regards to Quality Assurance BESTCLEAN ensures Zero Tolerance.
-                 </p>
-                 <i class="fas fa-caret-right fa-2x float-end"></i>
 
               </div>
             </li>
             <li>
-              <div class="content p-0 ps-3" data-aos="fade-left">  
+              <div class="content p-0 pe-3">  
+                <img src="assets/gif/qc.gif" class="timeline-img pe-3" alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap">QUALITY CONTROL <i class="fas fa-caret-right fa-2x float-end"></i> </p>
                  
-                    <img src="assets/gif/folding.png" id="folding" class="timeline-img circuler pe-3" alt="" srcset="">
-
-                    <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"> 
-                      BESTCLEAN has a pool of highly skilled manpower in Folding and Packaging service. Wide space and High quality Polycutting Machine added values to the Folding and Packaging section.
-                      <i class="fas fa-caret-left fa-2x float-start"></i> 
-                 </p>
 
               </div>
             </li>
             <li>
-              <div class="content p-0 pe-3" data-aos="fade-right">  
-                <img src="assets/gif/delivery-van.gif" id="delivery_van" class="timeline-img circuler pe-3" alt="" srcset="">
-                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap">Delivery <i class="fas fa-caret-right fa-2x float-end"></i>
-                </p>
+              <div class="content p-0 ps-3">  
+                <img src="assets/gif/folding.png" class="timeline-img pe-3" alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"><i class="fas fa-caret-left fa-2x float-start"></i> FOLDING & PACKAGING  </p>
+                 
+
+              </div>
+            </li>
+            <li>
+              <div class="content p-0 pe-3">  
+                <img src="assets/gif/delivery-van.gif" class="timeline-img pe-3" alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap">DELIVERY <i class="fas fa-caret-right fa-2x float-end"></i></p>
                  
 
               </div>
             </li>  
             <li>
-              <div class="content p-0 ps-3" data-aos="fade-left">  
-                <img src="assets/gif/delivery_to_customer.jpg" id="delivery_to_customer" class="timeline-img circuler " alt="" srcset="">
-                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"><i class="fas fa-caret-left fa-2x float-start"></i>Delivery to Customer </p>
+              <div class="content p-0 ps-3">  
+                <img src="assets/gif/delivery_to_customer.jpg" class="timeline-img " alt="" srcset="">
+                 <p class="m-0 d-flex justify-content-between align-items-center flex-wrap"><i class="fas fa-caret-left fa-2x float-start"></i>DELIVERY TO CUSTOMER</p>
                  
 
               </div>
@@ -220,29 +254,68 @@
    
  
     
- 
+<style> 
+#footer{
+    background: #000000;
+  }
+  .credits{
+    text-align: center;
+    padding-top: 30px; 
+  }
+</style> 
     <!-- ======= Our Team Section ======= -->
-    <section id="portfolio" class="portfolio section-bg my-3">
+    <section id="portfolio" class="portfolio  shadow-lg p-4">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>
-            <a href="#" style="color:#198754;">Achievements</a>
-          </h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="row justify-content-center my-5 mx-3 ">
+           <div class="col-lg-6 eclipse-border shadow p-5">
+            <h2 class="fw-bold">PICK UP</h2>
+            <p>BESTCLEAN has a fleet of covered vehicles to pick up the washable clothing from its outlets through the
+              metro city.</p>
+           </div>
         </div>
-
-        <!-- <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div> -->
- 
+        <div class="row justify-content-between my-5 mx-3 ">
+           <div class="col-lg-5 eclipse-border shadow p-5">
+            <h2 class="fw-bold">LAUNDRY</h2>
+            <p>BESTCLEAN has a rich Washing Plant consists of modern technology based world class washing machines where international standard washing chemicals are used. There is a high quality Water Treatment Plant for uninterrupted supply of clean water into the washing plant. BESTCLEAN has a support line of high quality Dryer Machines.</p>
+           </div>
+           <div class="col-lg-5 eclipse-border shadow p-5">
+            <h2 class="fw-bold">DRY CLEANING</h2>
+            <p>BESTCLEAN has a rich Dry Cleaning line of the latest technology based larger in size Dry Cleaning Machines from internationally famous brands. International standard cleaning chemicals are used in the whole dry cleaning process.</p>
+           </div>
+        </div>
+        <div class="row my-5 mx-3 justify-content-start"> 
+           <div class="col-lg-6 eclipse-border shadow p-5">
+            <h2 class="fw-bold">PRESSING</h2>
+            <p>The Pressing section of BESTCLEAN consists of modern technology based high quality Pressing Machineries and enriched by a pool of highly skilled manpower in Pressing service. There is a Boiler, made in USA to supply steam into the plant without any interruption.</p>
+           </div>
+        </div>
+        <div class="row my-5 mx-3 justify-content-end"> 
+           <div class="col-lg-6 eclipse-border shadow p-5">
+            <h2 class="fw-bold">QUALITY CONTROL</h2>
+            <p>In regards to Quality Assurance BESTCLEAN ensures Zero Tolerance.</p>
+           </div>
+        </div>
+        <div class="row my-5 mx-3 justify-content-start"> 
+           <div class="col-lg-6 eclipse-border shadow p-5">
+            <h2 class="fw-bold">FOLDING & PACKAGING</h2>
+            <p>BESTCLEAN has a pool of highly skilled manpower in Folding and Packaging service. Wide space and High quality Polycutting Machine added values to the Folding and Packaging section.</p>
+           </div>
+        </div>
+     
+        <div class="row my-5 mx-3  justify-content-end"> 
+           <div class="col-lg-6 eclipse-border shadow p-5">
+            <h2 class="fw-bold">DELIVERY</h2>
+            <p>With the help of its own fleet of covered vehicles BESTCLEAN delivers washed clothing in time to the
+              outlets.</p>
+           </div>
+        </div>
+        <div class="row my-5 mx-3  justify-content-start"> 
+           <div class="col-lg-6 eclipse-border shadow p-5">
+            <h2 class="fw-bold">DELIVERY TO CUSTOMER</h2>
+            <p>And Finally, our valued customers collect their clothing from the respective BESTCLEAN outlet.</p>
+           </div>
+        </div>
+         
 
       </div>
     </section><!-- End Our Team Section --> 
@@ -250,7 +323,17 @@
  
 
   </main><!-- End #main -->
-  
+
+  <!-- footer style -->
+  <style>
+    #footer .footer-top {
+      background: #198754;
+      border-top: 1px solid #768fa6;
+      border-bottom: 1px solid #67839c;
+      padding: 60px 0 30px 0;
+    }
+  </style>
+ 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -259,44 +342,54 @@
           <div class="col-lg-4 col-md-4 col-sm-12 footer-info">
             <h3>BestClean</h3>
             <p>
-              3, Rajuk Avenue,Motijheel C/A,<br />
-              Dhaka-1000, Bangladesh <br /><br />
-              <strong>Phone:</strong> 415-555-2671<br />
-              <strong>Email:</strong> bestclean.bd.ltd@gmail.com<br />
+              113/A/1, Tejgaon Industrial Area<br />
+              Dhaka-1208, Bangladesh <br /><br />
+              <strong>Phone:</strong> +88028870464-65<br />
+              <strong>Email:</strong> bestcleanltd2004@gmail.com<br />
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 footer-links footer-info">
-            <h3>Quick Links</h3>
-            <div class="row row-cols-2 text-center"> 
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
-                </li>
-              
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> 
-                  <a href="team.html">Teams</a>
-                </li>
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> <a href="outlets.html">Outlets</a>
-                </li>
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> 
-                  <a href="clients.html">Clients</a>
-                </li>
-                
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> <a href="pricing.html">Pricing</a>
-                </li>
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> <a href="gallery.html">Gallery</a>
-                </li>
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> <a href="aboutus.html">About Us</a>
-                </li> 
-                <li class="text-left">
-                  <i class="bx bx-chevron-right"></i> <a href="index.html#contact">Contact Us</a>
-                </li> 
+          <div class="col-lg-4 col-md-4 col-sm-12 footer-links footer-info"> 
+            <div > 
+              <table class="mx-auto">
+                <tr>
+                  <th colspan="2"><h3>Quick Links</h3></th> 
+                </tr> 
+                <tr class="table_text_left">
+                  <td class="td_padding">
+                    <i class="bx bx-chevron-right"></i> <a class="text-white" href="index.html">Home</a>
+                  </td>
+                  <td class="text-left"> 
+                    <i class="bx bx-chevron-right"></i> <a class="text-white"  href="team.html">Teams</a>
+                  </td> 
+                </tr>
+                <tr class="table_text_left">
+                  <td class="text-left">
+                    <i class="bx bx-chevron-right"></i> <a  class="text-white" href="outlets.html">Outlets</a>
+                  </td>
+                  <td class="text-left">
+                    <i class="bx bx-chevron-right"></i> <a  class="text-white" href="clients.html">Clients</a>
+                  </td> 
+                </tr>
+                <tr class="table_text_left">
+                  <td>
+                    <i class="bx bx-chevron-right"></i> <a   class="text-white" href="pricing.html">Pricing</a>
+                  </td>
+                  <td>
+                    <i class="bx bx-chevron-right"></i> <a  class="text-white" href="gallery.html">Gallery</a>
+                  </td> 
+                </tr>
+                <tr class="table_text_left">
+                  <td>
+                    <i class="bx bx-chevron-right"></i> <a class="text-white"  href="aboutus.html">About Us</a>
+                  </td>
+                  <td>
+                    <i class="bx bx-chevron-right"></i> <a class="text-white"  href="index.html#contact">Contact Us</a>
+                  </td> 
+                   
+                </tr>
+              </table>
+                 
             </div>
           
           </div>
@@ -315,7 +408,9 @@
     </div>
 
     <div class="container">
-      <div class="credits">Developed by CODETREE</div>
+      <div class="credits">Copyright © 2022 BESTCLEAN Ltd.</div>
+      <div class="credits">
+        <a href="https://codetreebd.com/" class="text-white">Developed by CODETREE</a> </div>
     </div>
   </footer>
   <!-- End Footer -->
@@ -331,7 +426,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Galada&family=Noto+Sans+Bengali:wght@300&family=Noto+Serif+Bengali:wght@100&family=Poppins:wght@500&family=Shippori+Antique+B1&display=swap');
  /* backto top */
  .back-to-top {
   background: #348f3c;
@@ -6,6 +7,12 @@
 
 .back-to-top:hover {
   background: #348f3c;
+}
+#hotline{
+  font-size: 20px;
+}
+.portfolio-wrap iframe{
+  /* width: 100%;  */
 }
 /*--------------------------------------------------------------
 # General
@@ -356,7 +363,14 @@ header#header {
 } 
 .custom-boder-radius{ 
     border-radius: 1.25rem!important; 
+    height: 270px;
 }
+@media screen  and (max-width: 1150px) 
+ { 
+  .custom-boder-radius{
+     font-size: 15px;
+    }
+ }
 
 /*--------------------------------------------------------------
 # Outlet Section End
@@ -374,7 +388,7 @@ header#header {
                         right: 10px;
                         background: #fff;
                         background: rgba(255, 255, 255, 0.6);
-                        background-image: url(../../controls.png);
+                        background-image: url(../img/pricing/controls.png);
                         background-repeat: no-repeat;
                         background-size: auto 100%;
                         background-position: 100%;
@@ -391,7 +405,7 @@ header#header {
                         right: 10px;
                         background: #fff;
                         background: rgba(255, 255, 255, 0.6);
-                        background-image: url(../../controls.png);
+                        background-image: url(../img/pricing/controls.png);
                         background-repeat: no-repeat;
                         background-size: auto 100%;
                         background-position: 50%;
@@ -411,7 +425,7 @@ header#header {
                         left: 10px;
                         background: #fff;
                         background: rgba(255, 255, 255, 0.6);
-                        background-image: url(../../controls.png);
+                        background-image: url(../img/pricing/controls.png);
                         background-repeat: no-repeat;
                         background-size: auto 100%;
                         background-position: 0%;
@@ -468,6 +482,17 @@ header#header {
   right: 0;
   overflow: hidden;
 }
+#slide_with_text{
+  position: absolute; 
+  top: 50px;
+  right:  50px; 
+  font-size: 4vw;
+  color: #fff;
+  font-family: 'Courgette', cursive; 
+}
+ 
+#slide_with_text h2{
+}
 #hero .carousel-content {
   text-align: left;
 }
@@ -482,7 +507,7 @@ header#header {
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: 900;
 }
 #hero p {
@@ -548,7 +573,7 @@ header#header {
 }
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    /* font-size: 28px; */
   }
 }
 @media (max-height: 500px) {
@@ -725,6 +750,11 @@ section {
   height:315px ;
  }
  
+ .home_yt_iframe{ 
+ }
+ .home_yt_iframe iframe{ 
+ }
+ 
 @media only screen and (min-width: 768px) and (max-width: 970px) {  
    
    #yt_iframe{
@@ -739,7 +769,10 @@ section {
 
 /*--------------------------------------------------------------
 # About Us
---------------------------------------------------------------*/ 
+--------------------------------------------------------------*/
+.eclipse-border{
+  border-radius: 50%;
+} 
 #washing{
   width: 237px;  
 }
@@ -1415,6 +1448,19 @@ select.form-custom-select{
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.footer-navigation{ 
+}
+.table_text_left{
+  text-align: left;
+} 
+.td_padding{
+  padding-right: 150px;
+}
+@media screen and (min-width: 768px) and (max-width: 1075px)  {
+  .td_padding{
+    padding-right: 50px;
+  }
+}
 .footer-links li{
   list-style: none;
   text-align: left;
