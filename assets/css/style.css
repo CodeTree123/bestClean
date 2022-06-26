@@ -970,6 +970,11 @@ section {
     padding: 40px 0;
   }
 }
+@media (max-width: 500px) {
+  .text-boxes{ 
+    border-radius: 0px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Counts
